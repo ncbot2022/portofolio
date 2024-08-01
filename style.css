@@ -51,17 +51,27 @@ p {
 	text-align: center;
 }
 
+.section-title-about {
+	font-size: 4rem;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
+
 .section-skill {
 	margin-left: 20px;
 	margin-right: 20px;
 }
 
-.section-about {
-	margin-left: 20px;
-	margin-right: 20px;
-}
 
 .section-title span {
+	color: crimson;
+}
+
+.section-title-about span {
 	color: crimson;
 }
 
