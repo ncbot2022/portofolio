@@ -250,7 +250,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./img/hero-bg.png);
+	background-image: url(./img/Background/BG-teknologi.jpeg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -354,7 +354,7 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./img/Design\ arduino\ ide.jpg);
+	background-image: url(./img/Background/BG-c++.jpeg);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
