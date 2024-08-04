@@ -250,7 +250,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./img/Background/BG-teknologi.jpeg);
+	background-image: url(./img/Background/hero-bg.png);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -350,7 +350,6 @@ p {
 	flex-basis: 80%;
 	display: flex;
 	align-items: flex-start;
-	justify-content: center;
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
@@ -360,6 +359,7 @@ p {
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	height: 300px;
 }
 
 #services .service-item::after {
@@ -618,10 +618,6 @@ p {
 	margin: 0 5px;
 }
 
-#footer .social-item img {
-	filter: grayscale(1);
-	transition: 0.3s ease filter;
-}
 
 #footer .social-item:hover img {
 	filter: grayscale(0);
@@ -673,8 +669,51 @@ p {
 
 /* End Keyframes */
 
+@media (max-width: 856px) {
+	.info-my {
+		height: auto;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.my-foto {
+		background-image: url(./img/Background/tunjuk\ bawah.jpg);
+		height: 300px;
+		width: 250px;
+		margin-left: 5px;
+		margin-right: 5px;
+		border-radius: 10px;
+		flex-shrink: 0;
+		transition: transform .2s;
+	}
+
+	.my-text {
+		text-align: center;
+		height: auto;
+		width: auto;
+		margin-top: 20px;
+	}
+
+	.info-my-two {
+		height: auto;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.my-text-two {
+		text-align: center;
+		height: auto;
+		width: auto;
+		margin-top: 20px;
+	}
+}
+
 /* Media Query For Tablet */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 856px) {
 	.cta {
 		font-size: 2.5rem;
 		padding: 20px 60px;
@@ -793,6 +832,63 @@ p {
 		padding-left: 20px;
 	}
 
+	#my-information .info-my {
+		height: 400px;
+		width: auto;
+		margin-left: 200px;
+		margin-right: 20px;
+		margin-top: 50px;
+		display: flex;
+	}
+
+	#my-information .my-foto {
+		background-image: url(./img/Background/tanya.jpg);
+		height: 400px;
+		width: 350px;
+		margin-left: 20px;
+		margin-right: 20px;
+		flex-shrink: 0;
+		border-radius: 10px;
+		transition: transform .2s;
+	}
+
+	#my-information .my-text {
+		height: 400px;
+		width: 500px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	#my-information .info-my-two {
+		height: 400px;
+		width: auto;
+		margin-left: 20px;
+		margin-right: 200px;
+		margin-top: 50px;
+		display: flex;
+		justify-content: right;
+	}
+
+	#my-information .my-foto-two {
+		background-image: url(./img/Background/kontribut.jpg);
+		height: 400px;
+		width: 350px;
+		margin-left: 20px;
+		margin-right: 20px;
+		flex-shrink: 0;
+		border-radius: 10px;
+		transition: transform .2s;
+	}
+
+	#my-information .my-text-two {
+		text-align: right;
+		height: 400px;
+		width: 500px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+
 	/* End contact  */
 }
 
@@ -832,6 +928,47 @@ p {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
+}
+
+.section-title-info {
+	font-size: 4rem;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+
+.section-title-info span {
+	color: crimson;
+}
+
+.my-foto-two:hover {
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.1);
+}
+
+.my-foto:hover {
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.1);
+}
+
+.line {
+	margin-top: 35px;
+	background-color: #29323c;
+	height: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	transform: skew(50deg);
+}
+
+.kontak-info {
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 /* End  Media Query For Desktop */
